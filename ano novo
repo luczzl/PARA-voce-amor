@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para Minha Noiva ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Glitter Touch */
+        .glitter {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: radial-gradient(circle, #ff99dd, #ff33aa, transparent);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: glitterFade 1s linear forwards;
+        }
+
+        @keyframes glitterFade {
+            0% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(2); }
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #ff66cc;
+            text-shadow: 0 0 10px #ff99dd, 0 0 20px #ff66cc;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-top: 20px;
+            color: #ffe6f7;
+            animation: fadeInText 3s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInText {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .heart {
+            margin: 40px auto;
+            width: 150px;
+            height: 150px;
+            background: transparent;
+            position: relative;
+            animation: pulse 1.5s infinite;
+            filter: drop-shadow(0 0 15px #ff66cc);
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 75px;
+            height: 120px;
+            background: #ff66cc;
+            border-radius: 75px 75px 0 0;
+        }
+
+        .heart:before { left: 75px; transform: rotate(-45deg); transform-origin: 0 100%; }
+        .heart:after { left: 0; transform: rotate(45deg); transform-origin: 100% 100%; }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #surpresaBtn { background:#ff66cc; color:white; box-shadow:0 0 10px #ff99dd; }
+        #nostalgiaBtn { background:white; color:#ff66cc; font-weight:600; box-shadow:0 0 10px #fff; }
+        #declaracaoBtn { background:#ff33aa; color:white; box-shadow:0 0 12px #ff66cc; }
+
+        .decl-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 102, 204, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 0 15px #ff66cc;
+        }
+
+        /* Hacker Screen */
+        #hackerScreen {
+            display:none;
+            position:fixed;
+            top:0; left:0;
+            width:100%; height:100%;
+            background:black;
+            color:#00ff55;
+            font-family: "Courier New", monospace;
+            padding:20px;
+            overflow:auto;
+            animation: screenShake 0.4s linear infinite;
+            z-index:9999;
+        }
+
+        @keyframes screenShake {
+            0% { transform: translate(0,0); }
+            25% { transform: translate(2px,-2px); }
+            50% { transform: translate(-2px,2px); }
+            75% { transform: translate(3px,1px); }
+            100% { transform: translate(0,0); }
+        }
+    </style>
+</head>
+<body>
+
+<div id="hackerScreen"></div>
+
+<div class="container" id="mainContent">
+    <h1>Para Minha Noiva, Meu Amor ❤️</h1>
+
+    <div class="heart"></div>
+
+    <p>
+        Hoje, dia <strong>03/12/2025</strong>, comemoramos <br>
+        <strong>1 ano e 4 meses</strong> juntos. <br><br>
+        E também celebramos nossa <strong>segunda virada de ano</strong> lado a lado. <br><br>
+        Obrigado por ser minha luz, minha paz e meu lar. <br>
+        Este site é simples, mas feito com todo meu amor por você.
+    </p>
+
+    <button id="surpresaBtn">Surpresa ❤️</button>
+    <button id="nostalgiaBtn">Relembrar Nostalgia 📸</button>
+    <button id="declaracaoBtn">Abrir Declaração 💌</button>
+
+    <div id="declaracaoTexto" class="decl-box" style="display:none;">
+        <p>
+            Meu amor… sei que namoro à distância não é fácil. Sei também que não sou o cara mais fácil do mundo de lidar.
+            Sou vaqueiro, corrido, bruto no jeito e ruim de demonstrar sentimento. Mas mesmo assim… mesmo sendo assim, o que eu sinto por você é enorme.
+            Sinto falta do teu toque, da tua voz perto, do teu cheiro. Sinto falta até das nossas briguinhas por besteira.
+            Eu posso falhar, posso parecer frio, mas você é quem mais mexe comigo nessa vida.
+            Quando o dia pesa, é você que meu coração chama. Quando eu penso no futuro, é você que aparece. A distância machuca, eu sei… mas esse amor é forte. É teimoso.
+            Quero que você sinta que mesmo longe… eu tô aqui. E mesmo sem saber falar bonito, eu sinto bonito. Você é minha calma, minha guerra boa, meu amor inteiro. Não desiste de mim não… porque eu te quero. E te quero muito.
+        </p>
+    </div>
+</div>
+
+<audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2023/03/27/audio_7f6c6f3c71.mp3?filename=calm-soft-piano-144232.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+// Glitter Touch Effect
+window.addEventListener("touchmove", (e) => {
+    let x = e.touches[0].clientX;
+    let y = e.touches[0].clientY;
+    spawnGlitter(x, y);
+});
+
+window.addEventListener("mousemove", (e) => {
+    if (e.buttons === 1) spawnGlitter(e.clientX, e.clientY);
+});
+
+function spawnGlitter(x, y) {
+    const g = document.createElement("div");
+    g.classList.add("glitter");
+    g.style.left = x + "px";
+    g.style.top = y + "px";
+    document.body.appendChild(g);
+    setTimeout(() => g.remove(), 800);
+}
+
+// Nostalgia Button Redirect + Hacker Animation
+const nostalgiaBtn = document.getElementById('nostalgiaBtn');
+const hackerScreen = document.getElementById('hackerScreen');
+const mainContent = document.getElementById('mainContent');
+
+nostalgiaBtn.onclick = () => {
+    mainContent.style.display = 'none';
+    hackerScreen.style.display = 'block';
+
+    const text = [
+        "ACESSANDO MEMÓRIAS...", "CARREGANDO ARQUIVOS SECRETOS...", 
+        "VERIFICANDO AMOR...", "AMOR DETECTADO ✔", "LIBERANDO ACESSO..."
+    ];
+
+    let i = 0;
+    let interval = setInterval(() => {
+        hackerScreen.innerHTML += text[i] + "<br>";
+        i++;
+        if (i >= text.length) {
+            clearInterval(interval);
+            setTimeout(() => {
+                window.location.href = "https://wa.me/5582988763649";
+            }, 1500);
+        }
+    }, 800);
+};
+
+// Declaração Toggle
+const declaracaoBtn = document.getElementById('declaracaoBtn');
+const declaracaoTexto = document.getElementById('declaracaoTexto');
+
+declaracaoBtn.onclick = () => {
+    declaracaoTexto.style.display = (declaracaoTexto.style.display === 'none') ? 'block' : 'none';
+};
+</script>
+
+</body>
+</html>
